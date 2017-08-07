@@ -1,11 +1,11 @@
-package io.gatling.funspec.example
+package io.micrometer.spring.perf
 
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import io.gatling.http.funspec.GatlingHttpFunSpec
-import io.gatling.funspec.example.GatlingFunSpecExample._
+import GatlingFunSpecExampleIT._
 
-class GatlingFunSpecExample extends GatlingHttpFunSpec {
+class GatlingFunSpecExampleIT extends GatlingHttpFunSpec {
 
   val baseURL = "http://example.com"
   override def httpConf = super.httpConf.header("MyHeader", "MyValue")
@@ -18,7 +18,7 @@ class GatlingFunSpecExample extends GatlingHttpFunSpec {
 
 }
 
-object GatlingFunSpecExample {
+object GatlingFunSpecExampleIT {
 
   def h1 = css("h1")
 

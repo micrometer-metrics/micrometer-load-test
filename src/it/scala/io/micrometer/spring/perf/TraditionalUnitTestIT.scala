@@ -1,8 +1,8 @@
-package io.gatling.funspec.example
+package io.micrometer.spring.perf
 
 import org.scalatest.FlatSpec
 
-class TraditionalUnitTest extends FlatSpec {
+class TraditionalUnitTestIT extends FlatSpec {
 
   "Traditional unit tests" should "work like they normally do" in {
     assert(true)

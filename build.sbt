@@ -1,11 +1,11 @@
-lazy val root = Project("gatling-funspec-example", file("."))
+lazy val root = Project("micrometer-load-test", file("."))
   .enablePlugins(GatlingPlugin)
   .settings(buildSettings: _*)
   .settings(libraryDependencies ++= projectDependencies)
   .settings(scalariformSettings: _*)
 
 lazy val buildSettings = Seq(
-  organization := "io.gatling.funspec",
+  organization := "io.micrometer.spring.perf",
   version := "1.0.0",
   scalaVersion := "2.11.8"
 )
