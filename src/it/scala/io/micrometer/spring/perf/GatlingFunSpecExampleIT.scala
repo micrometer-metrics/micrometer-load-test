@@ -7,7 +7,7 @@ import GatlingFunSpecExampleIT._
 
 class GatlingFunSpecExampleIT extends GatlingHttpFunSpec {
 
-  val baseURL = "http://example.com"
+  val baseURL = "https://example.com"
   override def httpConf = super.httpConf.header("MyHeader", "MyValue")
 
   spec {
